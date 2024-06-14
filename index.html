@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Table Comparison</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <h2>Funder Portal and Re-Platform Table Compare</h2>
+
+    <div class="container">
+        <div style="width:40%;">
+            <label for="tableSelect1">Funder Portal Table:</label> <br>
+            <select id="tableSelect1" onchange="checkAndShowSimilarTable(FunderPortalData, 'tableContainer1')"></select>
+        </div>
+        <div style="width:40%;">
+            <label for="tableSelect2">RE-Platform Table:</label> <br>
+            <select id="tableSelect2" onchange="checkAndShowSimilarTable(RePlatformData, 'tableContainer2')"></select>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="tableContainer1"></div>
+        <div id="tableContainer2"></div>
+    </div>
+
+    <script src="FunderPortal.js"></script>
+    <script src="RePlatform.js"></script>
+    <script src="relatedTable.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
